@@ -265,7 +265,7 @@ public class Employee extends javax.swing.JFrame {
         try {
             DataOb.dbConnects();
             String sql = "delete from employee where emp_id = '" + cmb1.getSelectedItem()+ "'";
-            int reply = JOptionPane.showConfirmDialog(rootPane, "You Want to Delete This ?","quit",JOptionPane.YES_NO_CANCEL_OPTION);
+            int reply = JOptionPane.showConfirmDialog(rootPane, "You Want to Delete This ?","Delete",JOptionPane.YES_NO_OPTION);
             switch (reply) {
                 case JOptionPane.YES_OPTION:
                     DataOb.insertManual(sql);
