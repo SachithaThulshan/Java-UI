@@ -21,9 +21,9 @@ public class AddMedicine extends javax.swing.JFrame {
      * Creates new form AddMedicine
      */
     public AddMedicine() {
-        initComponents();
-        
+        initComponents();        
         this.setTitle("Add Medicine");
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getClassLoader().getResource("test/Sources/med.png")));
     }
 
     /**
