@@ -180,7 +180,7 @@ public class AbsouterFrame extends javax.swing.JFrame implements Runnable {
                 int year = c.get(Calendar.YEAR);
                 
                 SimpleDateFormat date = new SimpleDateFormat("YYYY/MM/dd"); //year = YYYY, MOnth = MM, day = dd
-                SimpleDateFormat time = new SimpleDateFormat("hh:mm:ss");// hour = hh, minute = mm, second = ss
+                SimpleDateFormat time = new SimpleDateFormat("hh:mm:ss a ");// hour = hh, minute = mm, second = ss    a = AM/PM
                 Date d = c.getTime();
                 String displayDate = date.format(d);
                 String displaytime = time.format(d);
